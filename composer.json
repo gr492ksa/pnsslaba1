@@ -1,0 +1,21 @@
+{
+    "name": "gr492ksap/pnsslaba1",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gr492ksa",
+            "email": "lana.karpova.03@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "": "app/"
+        }
+    }
+}
