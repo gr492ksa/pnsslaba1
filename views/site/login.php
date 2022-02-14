@@ -14,6 +14,7 @@ if (!app()->auth::check()):
                 </div>
                 <div class="modal-body p-5 pt-0" bis_skin_checked="1">
                     <form method="post">
+                        <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
                         <div class="form-floating mb-3" bis_skin_checked="1">
                             <input type="text" class="form-control rounded-4" id="floatingInput"
                                    placeholder="Логин" name="login">
